@@ -2,7 +2,7 @@ apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
 metadata:
   name: asm-ingressgateway
-  namespace: asm-ingress
+  namespace: bank-of-anthos
 spec:
   selector:
     matchLabels:
