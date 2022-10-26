@@ -7,7 +7,7 @@ spec:
   hosts:
     - "*"
   gateways:
-    - asm-ingress/asm-ingressgateway
+    - bank-of-anthos/asm-ingressgateway
   http:
     - route:
         - destination:
