@@ -9,8 +9,7 @@ spec:
       selector:
         asm: ingressgateway
       ports:
-      - name: frontend
-        protocol: TCP
+      - protocol: TCP
         port: 80 # servicePort defined in MultiClusterIngress
         targetPort: 8080 # port on the asm-ingressgateway Pod that requests gets sent to (container port)
   clusters:
