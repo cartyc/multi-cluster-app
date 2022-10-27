@@ -79,7 +79,7 @@ spec:
     - source:
         principals:
         - cluster.local/ns/bank-of-anthos/sa/loadgenerator
-        # - cluster.local/ns/bank-of-anthos/sa/asm-ingressgateway
+        - cluster.local/ns/bank-of-anthos/sa/asm-ingressgateway
     to:
     - operation:
         methods:
