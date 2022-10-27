@@ -65,28 +65,28 @@ spec:
         ports:
         - "8080"
 ---
-apiVersion: security.istio.io/v1beta1
-kind: AuthorizationPolicy
-metadata:
-  name: frontend
-  namespace: bank-of-anthos
-spec:
-  selector:
-    matchLabels:
-      app: frontend
-  rules:
-  - from:
-    - source:
-        principals:
-        - cluster.local/ns/bank-of-anthos/sa/loadgenerator
-        - cluster.local/ns/bank-of-anthos/sa/asm-ingressgateway
-    to:
-    - operation:
-        methods:
-        - GET
-        - POST
-        ports:
-        - "8080"
+# apiVersion: security.istio.io/v1beta1
+# kind: AuthorizationPolicy
+# metadata:
+#   name: frontend
+#   namespace: bank-of-anthos
+# spec:
+#   selector:
+#     matchLabels:
+#       app: frontend
+#   rules:
+#   - from:
+#     - source:
+#         principals:
+#         - cluster.local/ns/bank-of-anthos/sa/loadgenerator
+#         - cluster.local/ns/bank-of-anthos/sa/asm-ingressgateway
+#     to:
+#     - operation:
+#         methods:
+#         - GET
+#         - POST
+#         ports:
+#         - "8080"
 ---
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
