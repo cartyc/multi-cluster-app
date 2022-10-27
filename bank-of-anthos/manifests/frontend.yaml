@@ -95,7 +95,7 @@ metadata:
   name: frontend
   namespace: bank-of-anthos
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: frontend
   ports:
