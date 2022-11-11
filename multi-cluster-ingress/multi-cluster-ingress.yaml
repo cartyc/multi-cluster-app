@@ -3,6 +3,8 @@ kind: MultiClusterIngress
 metadata:
   name: frontend-multi-cluster-ingress
   namespace: bank-of-anthos
+  annotations:
+    configsync.gke.io/cluster-name-selector: na-ne1-hub,na-ne2-hub
 spec:
   template:
     spec:
